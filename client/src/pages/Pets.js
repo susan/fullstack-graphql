@@ -8,7 +8,19 @@ import Loader from '../components/Loader'
 
 export default function Pets () {
   const [modal, setModal] = useState(false)
+  const GET_PETS= gql `
+    query GetPets {
+      pets {
+        name
+        id
+        img
+      }
+     }
+   `
 
+  const {data, loading, error}  = useQuery(GET_PETS)
+  if (loading) return "Loading...";
+  if (error) return `Error! ${error.message}`;
 
   const onSubmit = input => {
     setModal(false)
@@ -23,7 +35,7 @@ export default function Pets () {
       <section>
         <div className="row betwee-xs middle-xs">
           <div className="col-xs-10">
-            <h1>Pets</h1>
+            <h1>Pets </h1>
           </div>
 
           <div className="col-xs-2">
@@ -32,7 +44,7 @@ export default function Pets () {
         </div>
       </section>
       <section>
-        <PetsList />
+        <PetsList pets={data.pets} />
       </section>
     </div>
   )
