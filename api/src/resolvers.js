@@ -5,8 +5,25 @@
 
 module.exports = {
   Query: {
-    
+    // pets(_, __, ctx) {
+    //   return ctx.models.Pet.findMany()
+    // },
+    pets(_, {input}, {models}) {
+     return models.Pet.findMany(input)
+     },
+
+    pet(_, {input}, {models}) {
+      return models.Pet.findOne(input)
+     }
   },
+  Mutation: {
+    newPet(_, {input}, {models}){
+      return models.Pet.create(input)
+    }
+  }
+}
+
+  /* ,
   Mutation: {
     
   },
@@ -19,5 +36,5 @@ module.exports = {
   },
   User: {
     
-  }
-}
+  } */
+

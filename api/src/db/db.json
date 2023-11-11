@@ -3,5 +3,37 @@
     "id": "jBWMVGjm50l6LGwepDoty",
     "username": "frontendmaster"
   },
-  "pet": []
+  "pet": [
+    {
+      "name": "rover",
+      "id": "1",
+      "type": "DOG",
+      "createdAt": "34rtne"
+    },
+    {
+      "name": "littlekitty",
+      "id": "2",
+      "type": "CAT",
+      "createdAt": "34rtpe"
+    },
+    {
+      "name": "beautycat",
+      "id": "3",
+      "type": "CAT",
+      "createdAt": "34rhte"
+    },
+    {
+      "name": "Dogster",
+      "id": "4",
+      "type": "DOG",
+      "createdAt": "34rqte"
+    },
+    {
+      "id": "S8cVp7prebD9W2gAQyUXJ",
+      "createdAt": 1699652895626,
+      "name": "yincat",
+      "type": "CAT",
+      "img": "https://pixabay.com/photos/cat-young-animal-kitten-gray-cat-2083492/"
+    }
+  ]
 }
