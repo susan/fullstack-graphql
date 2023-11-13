@@ -17,8 +17,8 @@ type Pet {
   type: PetType!
   name: String!
   owner: User!
-  img: String!
-  createdAt: Int!
+  img: String
+  createdAt: Int
 }
 
 input NewPetInput {

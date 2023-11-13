@@ -3,5 +3,35 @@
     "id": "jBWMVGjm50l6LGwepDoty",
     "username": "frontendmaster"
   },
-  "pet": []
+  
+"pet":  [
+    {
+      "name": "rover", 
+      "id": "1",
+      "type": "DOG",
+      "img": "https://unsplash.com/photos/a-small-white-dog-standing-next-to-a-tree-KnSYF3b4KcM",
+      "createdAt": "34rtne"
+    },
+
+    {
+      "name": "littlekitty", 
+       "id": "2",
+      "type": "CAT",
+       "img": "https://www.pexels.com/photo/cat-sitting-inside-a-plastic-ring-977935/",
+      "createdAt": "34rtpe"
+    },
+    {
+      "name": "beautycat", 
+       "id": "3",
+      "type": "CAT",
+      "createdAt": "34rhte"
+    },
+
+    {
+      "name": "Dogster", 
+       "id": "4",
+      "type": "DOG",
+      "createdAt": "34rqte"
+    }
+  ]
 }

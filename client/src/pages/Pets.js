@@ -13,6 +13,7 @@ export default function Pets () {
       pets {
         name
         id
+        type
         img
       }
      }
