@@ -29,7 +29,7 @@ const typeDefs = gql`
 
     type Query {
       me: User!
-      shoes(input: ShoesInput): [Shoe]
+      shoes(someshoesomething: ShoesInput): [Shoe]!
     }
 
     type Mutation {
@@ -45,11 +45,10 @@ const typeDefs = gql`
               friends:[]
             }
         }, 
-         shoes(_, {input}) {
+         shoes(_, {someshoesomething}) {
           return [
             {brand: "nike", size: 6},
-            {brand: "canvas", size: 5}
-          ]
+            {brand: "canvas", size: 5}].filter(shoe=> shoe.brand===someshoesomething.brand)
          }           
       },
       Mutation: {
